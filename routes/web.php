@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,8 +26,17 @@ Route::get('/tugas1', function () {
     ]);
 });
 
+Route::get('/palindrom', function () {
+    return view('palindrom');
+});
+
 Route::get('/tugas2', function () {
     return view('tugas2', [
         "title" => "tugas2",
     ]);
 });
+
+Route::get('/tugas2', [ApiController::class, 'index']);// Daftar surah
+Route::get('/tugas2/{number}', [ApiController::class, 'detail']); // Detail ayat
+
+

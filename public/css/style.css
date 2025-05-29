@@ -1,3 +1,27 @@
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0, 0.5rem;
+}
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-sm,
+.navbar > .container-md,
+.navbar > .container-lg,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ====== */
+
 @media only screen and (max-width: 360px) {
     .btn-tes {
         height: 40%;
@@ -16,9 +40,7 @@
         width: auto;
     }
 }
-.contact-us {
-    height: 190vmax;
-}
+
 @media only screen and (min-width: 768px) {
     .btn-tes {
         height: 40%;
@@ -44,9 +66,10 @@
     }
 }
 
-/* html {
-    font-size: 10px;
-} */
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
 
 /*========= CSS HOME =========*/
 .btn-tes {
@@ -71,8 +94,13 @@ button:hover {
     position: relative;
     width: 300px;
     height: 200px;
-  background: #2A7B9B;
-background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(171, 199, 219, 1) 37%, rgba(190, 247, 231, 1) 100%);
+    background: #2a7b9b;
+    background: linear-gradient(
+        90deg,
+        rgba(42, 123, 155, 1) 0%,
+        rgba(171, 199, 219, 1) 37%,
+        rgba(190, 247, 231, 1) 100%
+    );
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -105,49 +133,87 @@ background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(171, 199, 219,
 }
 
 /*========= CSS TUGAS 1 =========*/
-input[type="number"], select {
-      padding: 10px;
-      font-size: 16px;
-      width: 200px;
-      margin-bottom: 15px;
-      margin-right: 10px;
-    }
+input[type="number"],
+select {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
 
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      background-color: #3498db;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
 
-    button:hover {
-      background-color: #2980b9;
-    }
+button:hover {
+    background-color: #2980b9;
+}
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+    border-spacing: 10px;
+}
 
-    table, th, td {
-      border: 1px solid #ccc;
-    }
 
-    th, td {
-      padding: 10px;
-      text-align: center;
-    }
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
 
-    th {
-      background-color: #3498db;
-      color: white;
-    }
+th {
+    background-color: #666169;
+    color: white;
+}
 
-    h3 {
-      margin-top: 30px;
-    }
+h3 {
+    margin-top: 30px;
+}
+
+/*========= CSS TUGAS 2 =========*/
+.dataTables_filter {
+    float: left !important;
+ }
+
+h1 {
+    margin-bottom: 20px;
+}
+
+table.dataTable th,
+table.dataTable td {
+    white-space: nowrap;
+}
+
+h3 {
+    text-align: center;
+    font-style: italic;
+}
+
+.ayat {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+.arab {
+    font-size: 32px;
+    padding-top: 10px;
+}
+
+.translation {
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+
