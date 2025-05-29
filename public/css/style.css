@@ -1,0 +1,153 @@
+@media only screen and (max-width: 360px) {
+    .btn-tes {
+        height: 40%;
+        width: auto;
+    }
+}
+@media only screen and (min-width: 360px) {
+    .btn-tes {
+        height: 40%;
+        width: auto;
+    }
+}
+@media only screen and (min-width: 576px) {
+    .btn-tes {
+        height: 40%;
+        width: auto;
+    }
+}
+.contact-us {
+    height: 190vmax;
+}
+@media only screen and (min-width: 768px) {
+    .btn-tes {
+        height: 40%;
+        width: auto;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .btn-tes {
+        height: 40%;
+        width: auto;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .btn-tes {
+        height: 40%;
+        width: auto;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .btn-tes {
+        height: 40%;
+        width: auto;
+    }
+}
+
+/* html {
+    font-size: 10px;
+} */
+
+/*========= CSS HOME =========*/
+.btn-tes {
+    height: 40%;
+    width: auto;
+}
+
+button:hover {
+    opacity: 75%;
+}
+
+.button {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 2.6px;
+    position: relative;
+    width: 300px;
+    height: 200px;
+  background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(171, 199, 219, 1) 37%, rgba(190, 247, 231, 1) 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card img {
+    transition: all 1.5s ease;
+}
+
+.card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+}
+
+.card-head:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+}
+.card-head:hover img {
+    filter: blur(2px);
+}
+.card-head:hover .button {
+    opacity: 1;
+}
+
+/*========= CSS TUGAS 1 =========*/
+input[type="number"], select {
+      padding: 10px;
+      font-size: 16px;
+      width: 200px;
+      margin-bottom: 15px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+
+    h3 {
+      margin-top: 30px;
+    }
