@@ -6,7 +6,6 @@
 /vendor
 .gitignore
 .env
-.env.example
 .env.backup
 .env.production
 .phpunit.result.cache
